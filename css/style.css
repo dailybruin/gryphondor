@@ -1052,7 +1052,7 @@ span.copyright {
 @media (max-width: 767px) {
 	header {
 	    height: 44px;
-	    background-image: url('/img/black-linen.png');
+	    background-image: url('img/black-linen.png');
 	    margin-left: -20px;
 		padding: 0 10px;
 		margin-right: -20px;
