@@ -397,6 +397,12 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 	background: rgba(100,100,100,0.6);
 }
+@media (min-width: 979px) and (max-width: 1200px)  
+{
+	#howewo-banner {
+		margin-left: 0px;
+	}
+}
 /*change width, font-size, and padding together!*/
 #howewo-banner-nav a {
 	display:inline-block;
@@ -409,6 +415,29 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	font-weight: bold;
 	padding: 16px;
 }
+@media (max-width: 480px) 
+{	
+	#howewo-banner {
+		height: 175px;
+	}  
+	#howewo-banner > div p {
+		bottom: auto;
+		top: 80px;
+		font-size: 20px;
+	}
+	#howewo-banner > div p  span{
+		font-size: 24px;
+	}
+	#howewo-banner-nav {
+		height: 40px;
+	}
+	#howewo-banner-nav a{
+		font-size: 14px;
+		padding: 8px;
+		width: 26%;
+		text-align: center;
+	}
+}
 #howewo-banner-nav a:link,
 #howewo-banner-nav a:visited,
 #howewo-banner-nav a:hover,
@@ -420,7 +449,14 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .howewo-column {
 	margin-left: 0px;
-	margin-right: 30px;
+	margin-right: 0px;
+}
+@media (min-width: 979px) and (max-width: 1200px)
+{
+	.howewo-column {
+		margin-left: 0px;
+		margin-right: 0px;	
+	}
 }
 #howewo-load {
 	display: none;
@@ -430,9 +466,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 
 .howewo-img-wrap {
-	margin: 0 0 30px 0;
+	margin: 0 auto 30px auto;
 	position: relative;
-	width: 100%;
+	width: 90%;
 }
 .howewo-img-wrap img{
 	width: 100%;
@@ -465,6 +501,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
     -o-user-select: none; 
     user-select: none;
 }
+
 #howewo-lightbox {
 	/*if need to work on IE, can use overlay.png from this site: 
 	http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/super-simple-lightbox-with-css-and-jquery/;*/
@@ -475,16 +512,11 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	top: 0;
 	left: 0;
 	text-align: center;
+	z-index: 100;
 }
 #lightbox-container {
 	position: relative;
 	height: 100%;
-/*
-	animation: fadein 0.5s;
-    -moz-animation: fadein 0.5s; 
-    -webkit-animation: fadein 0.5s;
-    -o-animation: fadein 0.5s;
-    */
 }
 #lightbox-container img {
 	padding: 20px 0px 0px 0px;
@@ -501,23 +533,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
   	height: auto;
   }
 }
-/*
-@keyframes fadein {
-    from {opacity:0.5;}
-    to {opacity:1;}
-}
-@-moz-keyframes fadein { 
-    from {opacity:0.5;}
-    to {opacity:1;}
-}
-@-webkit-keyframes fadein {
-    from {opacity:0.5;}
-    to {opacity:1;}
-}
-@-o-keyframes fadein { 
-    from {opacity:0.5;}
-    to {opacity: 1;}
-}​*/
 #lightbox-container div {
 	margin-left: auto;
 	margin-right: auto;
@@ -535,6 +550,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	opacity: 0.5;
 	cursor: pointer;
 }
+
 #lightbox-container div.nav.left {
 	-webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -545,8 +561,25 @@ a.photoblog-post-tag.pb-tag-westwoodla,
     right: 0;
     margin: 0;
 }
+
 #lightbox-container div.nav.right {
 	right: 300px;
+}
+@media (max-width: 480px)
+{
+	#lightbox-container {
+		padding-top: 50px;
+	}
+	#lightbox-container div.nav {
+		top: 150px;
+	}
+	#lightbox-container div.nav.left {
+		left: 0px;
+	}
+	#lightbox-container div.nav.right{
+		right: 0px;
+	}
+
 }
 #lightbox-container div#lb-close {
 	position: absolute;
