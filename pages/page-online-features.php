@@ -96,8 +96,13 @@ a.darken:hover span{color:#fff;
     width: 320px;
     vertical-align: top;
 }
+.item{
+    width: 30%;
+}
 
 </style>
+
+<script src="/wp-content/themes/gryphondor/js/vendor/jquery.masonry.min.js"></script>
 
 <script>
 var features =
@@ -352,9 +357,39 @@ var features =
     },
 ];
 </script>
+<script>
+$(window).load(function(){
+var $container = $('#container');
+    $container.imagesLoaded(function(){
+        $container.masonry({
+                itemSelector:'.item',
+                columnWidth:10,
+                gutter: 10
+        });
+       $container.masonry();
+   });
 
+
+});
+    </script>
+
+
+<div class="page-header">
+<h1>FEATURES</h1>
+</div>
+
+<button type="button" href="#" class="classname" onclick="rerender('0')">ALL</button>
+<button type="button" href="#" class="classname" onclick="rerender('2013')">2013</button>
+<button type="button" href="#" class="classname" onclick="rerender('2012')">2012</button>
+<button type="button" href="#" class="classname" onclick="rerender('2011')">2011</button>
+<button type="button" href="#" class="classname" onclick="rerender('2010')">2010</button>
+
+
+<div id ="container" class="js-masonry">
 <script>
 function rerender(feature_year) {
+    $(container).masonry('remove',$(container).find('.item'));
+    var $container = $('#container');
     $('div.feature_objects').empty();
     var fhtml = "";
     if(feature_year != 0) {
@@ -368,10 +403,11 @@ function rerender(feature_year) {
         if(features[i].year == feature_year) {
             var obj = features[i];
 
-            fhtml = fhtml + '<div class="box"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
+            fhtml = fhtml + '<div class="item"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
             + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;">' + obj.description
             + '<br/><i style="font-size: 8pt; float: right; margin-right: 10px;">' + obj.author
             + '</i></span></a></div>';
+          
         }
     }
     }
@@ -379,45 +415,50 @@ function rerender(feature_year) {
 	 for(var i = 0; i < features.length; i++) {
         var obj = features[i];
 
-        fhtml = fhtml + '<div class="box"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
+        fhtml = fhtml + '<div class="item"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
         + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;">' + obj.description
         + '<br/><i style="font-size: 8pt; float: right; margin-right: 10px;">' + obj.author
         + '</i></span></a></div>';
     }
     }
 
-    $('div.feature_objects').hide().html(fhtml).fadeIn('slow');
+            var $container = $('#container');
+            $(container).append(fhtml);
+            $(container).masonry('reloadItems');
+            $(container).masonry();
+
+           
+  // $('div.feature_objects').hide().html(fhtml).fadeIn('slow');
+
 }
 </script>
 
 <script>
 $(document).ready(function() {
+    var $container=$('#container');
     var fhtml = "";
     for(var i = 0; i < features.length; i++) {
         var obj = features[i];
 
-        fhtml = fhtml + '<div class="box"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
+        fhtml = fhtml + '<div class="item"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
         + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;">' + obj.description
         + '<br/><i style="font-size: 8pt; float: right; margin-right: 10px;">' + obj.author
         + '</i></span></a></div>';
     }
+        var $container = $('#container');
+           $(container).append(fhtml);
+            $(container).masonry('reloadItems');
+            $(container).masonry();
+   // $('div.feature_objects').html(fhtml);
 
-    $('div.feature_objects').html(fhtml);
 });
 
 </script>
-
-<div class="page-header">
-<h1>FEATURES</h1>
 </div>
 
-<button type="button" href="#" class="classname" onclick="rerender('0')">ALL</button>
-<button type="button" href="#" class="classname" onclick="rerender('2013')">2013</button>
-<button type="button" href="#" class="classname" onclick="rerender('2012')">2012</button>
-<button type="button" href="#" class="classname" onclick="rerender('2011')">2011</button>
-<button type="button" href="#" class="classname" onclick="rerender('2010')">2010</button>
 
-<div class="feature_objects">
+
+<div class="container">
 
 <!--Features are rendered in here-->
 
