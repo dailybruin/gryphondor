@@ -385,7 +385,6 @@ var $container = $('#container');
 <button type="button" href="#" class="classname" onclick="rerender('2010')">2010</button>
 
 
-<div id ="container" class="js-masonry">
 <script>
 function rerender(feature_year) {
     $(container).masonry('remove',$(container).find('.item'));
@@ -454,11 +453,10 @@ $(document).ready(function() {
 });
 
 </script>
-</div>
 
 
 
-<div class="container">
+<div id="container" class="js-masonry">
 
 <!--Features are rendered in here-->
 
