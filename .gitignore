@@ -1,0 +1,6 @@
+*.swp
+*~
+*.lock
+*.out
+
+.sass-cache/
