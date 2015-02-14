@@ -649,6 +649,71 @@ var LocsB = [
           icon: 'http://maps.google.com/mapfiles/markerS.png',
           zoom: 17,
         },
+        {
+          lat: 34.062408,
+          lon: -118.447884,
+          title: 'Koala Tapioca',
+          html: [
+                  '<h3>Koala Tapioca</h3>',
+                  '<p>The alumna-run food truck transitions to a brick-and-mortar restaurant</p>'
+                ].join(''),
+          fulldesc: [
+                '<h3>Koala Tapioca</h3>',
+                '<div class="row"><div class="span8">',
+                '<img src="http://dailybruin.com/images/2015/01/web.ae_.1.29.koala_.MKT_-640x426.jpg" class="img-responsive" alt="koala"><span class="photocred">',
+                 'Mary Kate Turner / Daily Bruin',
+                 '</span><br><br><strong>',
+                 'BY LINDSAY WEINBERG',
+                 '</strong><br><br>',
+                '<p>UCLA alumni David Mangold and Vince Ho, founders of Koala Tapioca, have battled construction issues and a name change of their boba business since its launch as a food truck in November 2013.</p>',
+
+                '<p>Despite these struggles, the brick-and-mortar restaurant recently opened for business on Jan. 9. The founders presented boba, tacos and signature Koala Fries – french fries topped with Korean-style beef, cheese, green onion, guacamole and sauce – on the opening preview day on Jan. 22.</p>',
+
+                '<p>Koala Tapioca was founded after Mangold and Ho graduated, when Mangold’s family friend of 10 years wanted to go into the drink industry near UC Berkeley.</p>',
+
+                '<p>“I said, ‘You should do it near UCLA because you know there’s a higher price point, there’s a bigger market and less competition,’” Mangold said.</p>',
+
+                '<p>Mangold agreed to manage this budding business. However, the lease for the restaurant initially had permitting issues that caused delayed construction. Wanting to introduce themselves to the market, the pair ran a smaller scale version – a food truck – in Westwood for about six months, until April 2014.</p>',
+
+                '<p>Ho said the restaurant was originally named Koala Tea, as a play on the word quality. Despite securing copyrights for the name, an Australian Koala Tea company sent a cease and desist letter based on customer confusion between the two shops. As a compromise, Mangold said they rebranded to Koala Tapioca, but are referred to colloquially as Koala T to retain the pun.</p>',
+
+                '<p>Though the business has changed from a food truck called Koala Tea, Ho said the Koala Tapioca restaurant has strived to maintain three values: quality product, service and experience.</p>',
+
+                '<div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2015/01/web.ae_.1.29.koala_.MKT_.picB_.jpg" width="210"><span class="photocred-inline">(Mary Kate Turner/Daily Bruin)</span></div>',
+
+                '<p>Mangold said the experience aspect is shaped by his time visiting Korea and Vietnam. Enlightened by observations in Asia of melding social interactions and eating together in one space, the founders offer board games and power outlets in the store so customers can spend hours inside, lounging or studying. They wanted to give this Asian social experience to students at UCLA, Mangold said.</p>',
+
+                '<p>“When I see people here that speak Chinese, and genuinely come here to get cups of boba and talk here for two or three hours, that makes me feel really good,” Mangold said.</p>',
+
+                '<p>The founders’ original intentions were realized when the brick-and-mortar building on Weyburn Avenue opened. The first day, they fulfilled 450 orders, a statistic that Mangold said almost led him to tears as he felt that months of work and worry had climaxed in the store’s opening. Despite working at the shop from about 9 a.m. until 4 a.m., the founders said finally serving drinks in a physical building is a dream come true.</p>',
+
+                '<p>"It’s always a roller coaster,” Mangold said. “You know it’s just one of those things where every time the company does well it’s like the best day of your life, and every time something’s going wrong it’s the worst day of your life.”</p>',
+
+                '<p>Though the business had struggled with delayed construction of the restaurant and the name issues, Mangold and Ho’s work culminated in the opening preview night. Foodies from around Los Angeles gathered in the new brick-and-mortar store to photograph and taste everything from its colorful flavored drinks of lychee and jasmine to its popular Koala Fries.</p>',
+
+                '<p>“People liked our story, people liked our charisma in starting this right after college and people seemed to genuinely like both the concept and the product, which I consider a very big compliment,” Mangold said.</p>',
+
+                '<p>This opening was memorable for Ho because it marked the start of the restaurant, which he said is more efficient than the truck because of the full kitchen, static hours and more versatile menu, allowing them to offer 30 drinks a day instead of six or seven. The building’s architecture nods to its previous life as a food truck with its large, metal serving window.</p>',
+
+                '<p>”(I’m) really excited that this is working, and nervous because we want to keep building and growing and becoming the best boba shop we can be,” Ho said.</p>',
+
+                '<p>Third-year economics student Daniel Le, who has worked for Koala Tapioca for about a year, said the restaurant allows for more interactions with students than the truck did. Le met Mangold and Ho through their fraternity, Theta Xi, and said he looked up to Mangold as a role model. Passionate about cooking, Le said he was even entrusted with some creative input toward menu items, like the "Milky Way," a drink with layers of milk slush, caramel, boba and pudding.</p>',
+
+                '<p>Mangold said he hopes Koala Tapioca will become as central to Westwood as Diddy Riese, a place where students can feel comfortable with an authentic taste of Asian flavors.</p>',                 '</div>',
+                 '<div class="span4">',
+                 '<ul class="icons-ul">',
+                 '<li><i class="icon-map-marker"></i> 10965 Weyburn Ave., Los Angeles, CA 90024</li>',         
+                 '<li><i class="icon-bell"></i> (310) 425-5502</li>',         
+                 '<li><i class="icon-calendar"></i> Mon-Sat: 12 p.m.-12 a.m. Sun: closed</li>',  
+                 '<li><i class="icon-briefcase"></i> Delivery: No</li>',        
+                 '<li><i class="icon-tag"></i> $</li>',         
+                 '<li><i class="icon-info-sign"></i> Street parking</li>', 
+                 '<li><i class="icon-globe"></i> <a href="http://koalatapioca.com" target="_blank">http://koalatapioca.com</a></li>',
+                 '</ul></div></div>'
+              ].join(''),
+          icon: 'http://maps.google.com/mapfiles/markerS.png',
+          zoom: 17,
+        },
 
 
 
