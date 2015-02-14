@@ -129,6 +129,7 @@ Template Name: A&E Flavors of Westwood 3
       float: right;
       color: #c0c0c0;
       font-style: italic;
+      margin-bottom: 15px;
     }
     article#fow #controls-tabs {
       width: 180px;
