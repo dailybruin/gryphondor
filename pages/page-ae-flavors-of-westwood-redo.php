@@ -11,6 +11,7 @@ Template Name: A&E Flavors of Westwood 3
 <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
 
+
 <style>
     article#fow {
         max-width: 1150px;
@@ -157,40 +158,6 @@ Template Name: A&E Flavors of Westwood 3
       display: inline-block;
       color: #999;
     }
-
-    article#fow dl {
-      display: inline-block;
-      background: #f5f5f5;
-      float: right;
-      text-align: center;
-      margin-left: 5px;
-    }
-    article#fow dl {
-      padding-top: 0.5em;
-    }
-
-    article#fow dd {
-      display: inline;
-      text-align: center;
-      margin-left: 5px;
-    }
-
-    article#fow dl dt img {
-      padding: 5px;
-    }
-
-	@media (min-width: 480px) {
-		article#fow dl {
-			width: 100%;
-		}
-	}
-
-	@media only screen and (min-width: 768px) {
-		article#fow dl {
-			width: 40%;
-		}
-	}
-
     article#fow .gmnoprint {
       display: none !important;
     }
@@ -251,11 +218,11 @@ Template Name: A&E Flavors of Westwood 3
 	</div>
 </script>
 
+<div class="container">
 
 <article id="fow">
 
 <img class="background" src="http://dailybruin.com/images/2014/01/bg7_2.png"/>
-
 <h1>Flavors of Westwood</h1>
 <p class="lead">Throughout this past year, A&amp;E reporters have been venturing into the world of Westwood dining to dig up the stories behind the creation and the flavor of each eatery. Explore the flavors of Westwood through our interactive map.</p>
 
@@ -266,13 +233,7 @@ Template Name: A&E Flavors of Westwood 3
 <div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
 
 </article>
-
-
-
-<script>
-
-</script>
-
+</div>
 <script type="text/javascript">
 $(document).ready(function(){
     unresponsivize();
