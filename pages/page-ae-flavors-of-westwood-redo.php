@@ -1,5 +1,5 @@
 <?php/*
-Template Name: A&E Flavors of Westwood 2
+Template Name: A&E Flavors of Westwood 3
 */ ?>
 
 <?php get_header(); ?>
@@ -232,9 +232,9 @@ Template Name: A&E Flavors of Westwood 2
 		</span>
 		<br />
 		<br />
-		<h2>
+		<h4>
 			BY <%= restaurant.author %>
-		</h2>
+		</h4>
 		<p><%= restaurant.content %></p>
 		</div>
 		<div class="span4">
@@ -284,11 +284,17 @@ $args = array('tag' => 'flavors-of-westwood');
 $posts = get_posts( $args );
 $data = array();
 
+// removed in article picture, was causing problems.
+$pattern = '/\[caption [^\[]*\[\/caption]/';
+$replace = '';
+
 foreach ($posts as $post) : setup_postdata($post);
 	$post_data = array();
 	$post_id = get_the_ID();
 	$post_data['author'] = get_the_author();
-	$post_data['content'] = wpautop(get_the_content());
+	$content = get_the_content();
+	$realcontent = preg_replace($pattern, $replace, $content);
+	$post_data['content'] = wpautop($realcontent);
 	$post_data['featured'] = wp_get_attachment_url( get_post_thumbnail_id() );
 	$post_data['photo-credit'] = get_post(get_post_thumbnail_id())->post_excerpt; 
 	$data[$post_id] = $post_data;
@@ -296,6 +302,8 @@ endforeach;
 echo "var post_json = ". json_encode($data);
 wp_reset_postdata(); 
 ?>
+
+console.log(post_json);
 
 var url = "https://spreadsheets.google.com/feeds/list/1yuMJRF0CisMIAsO20eaLM5Pn5pI_6kuj7tdwF5R30p0/od6/public/values?alt=json";
 $(document).ready(function(){
